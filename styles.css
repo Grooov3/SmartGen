@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-indent: 0;
+}
+
+.s1 {
+    color: #212121;
+    font-family: Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 8pt;
+    padding-left: 3pt;
+    padding-right: 2pt;
+    text-indent: 0pt;
+    text-align: center;
+}
+
+.s2 {
+    color: #212121;
+    font-family: Arial, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 8pt;
+    
+}
+
+.s3 {
+    color: #212121;
+    font-family: Arial, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 9pt;
+}
+
+.s4 {
+    color: #1154CC;
+    font-family: Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: underline;
+    font-size: 8pt;
+}
+
+.s5 {
+    color: #212121;
+    font-family: Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 6pt;
+}
+
+.s7 {
+    color: #1154CC;
+    font-family: Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 6pt;
+}
+
+table,
+tbody {
+    vertical-align: top;
+    overflow: visible;
+}
+.datePicker{
+    margin-left: 20px;
+}
+.td-margin{
+    margin: 0px;
+}
+
+#nf0, #nf1, #nf2, #nf3, #nf4, #nf5, #nf6, #nf7, #nf8, #nf9{
+    display: none;
+}

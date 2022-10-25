@@ -1,0 +1,1794 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="pt">
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Smart NF Almoço</title>
+        <meta name="author" content="Cherne" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="./js/script.js" defer></script>
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    </head>
+
+    <body>
+        <br/>
+        <div class="datePicker">
+            <label>Selecione o Período: </label>
+            <input id="dateRange" type="text" name="daterange" value="01/01/2022 - 01/15/2018"/>
+            <button onclick="gerarPDF()">Gerar PDF</button>
+        </div>
+            <div class="main">
+                <table  style="border-collapse:collapse;margin-left:5.5pt"
+                    cellspacing="0">
+                    <tr style="height:242pt">
+                        <td class="td-margin" id="nf0" style="width:260pt;">
+                            <p style="text-indent: 0pt;text-align:
+                                left;">
+                                <br />
+                            </p>
+                            <p class="s1" style="padding-left:
+                                3pt;padding-right:
+                                2pt;text-indent: 0pt;text-align: center;">
+                                CNPJ:33.822.843/0001-22DUELOS RESTAURANTE EIRELE
+                                EST.
+                                DEPUTADO OCTAVIO CABRAL,284 LOJA B JARDIM
+                                AMERICA
+                                –ITAGUAI – RJ 23.810-302 Fone:(21)3782-2075
+                                I.E.11452.23-0
+                            </p>
+                            <p style="text-indent: 0pt;text-align: left;">
+                                <br />
+                            </p>
+                            <p class="s2" style="padding-left:
+                                3pt;padding-right:
+                                2pt;text-indent: 0pt;text-align: center;">
+                                DOCUMENTO AUXILIAR DA NOTA FISCAL DE CONSUMIDOR
+                                ELETRONICA
+                            </p>
+                            <p class="s3" style="padding-left:
+                                3pt;padding-right:
+                                2pt;text-indent: 0pt;line-height:
+                                10pt;text-align:
+                                center;">EMITIDA EM CONTINGÊNCIA
+                            </p>
+                            <p class="s3" style="padding-left: 76pt;text-indent:
+                                0pt;line-height: 10pt;text-align: left;">Pendente
+                                de
+                                Autorização
+                            </p>
+                            <p class="s1" style="padding-left:
+                                2pt;padding-right: 19pt;text-indent:
+                                0pt;text-align:
+                                left;">
+                                <span style="padding-right: 10px;">
+                                    # Código
+                                </span>
+                                <span style="padding-right: 30px;">
+                                    Descrição
+                                </span>
+                                <span style="padding-right: 7px;">
+                                    Qtd
+                                </span>
+                                <span style="padding-right: 20px;">
+                                    Un
+                                </span>
+                                <span style="padding-right: 13px;">
+                                    Valor Unit.
+                                </span>
+                                <span>
+                                    Valor Total
+                                </span>
+                            </p>
+                            <p class="s1" style="padding-left:
+                                2pt;padding-right: 19pt;text-indent:
+                                0pt;text-align:
+                                left;">
+                                <span style="padding-right: 19px;">
+                                    001 99
+                                </span>
+                                <span style="padding-right: 5px;">
+                                    Refeição divers 
+                                </span>
+                                 <span style="padding-right: 5px;">
+                                    001
+                                 </span> 
+                                 <span style="padding-right: 5px;">
+                                    UN
+                                 </span>
+                                 <span style="padding-right: 5px;">
+                                    X
+                                 </span>
+                                 <span class="valorNF0" style="padding-right: 45px;">
+                                    28,50
+                                 </span> 
+                                 <span class="valorNF0">
+                                    28,50
+                                 </span> 
+                                <span style="padding-right: 165px;">
+                                    QTD.TOTAL DE ITENS
+                                </span> 
+                                <span>
+                                    001
+                                </span>
+                            </p>
+                            <p class="s1" style="padding-left: 2pt;text-indent:
+                                0pt;text-align: left;">VALOR TOTAL R$
+                                <span class="valorNF0">
+                                     28,50
+                                </span> 
+                            </p>
+                            <p class="s1" style="padding-left: 2pt;text-indent:
+                                0pt;line-height: 9pt;text-align: left;">
+                                <span style="padding-right: 44px;">
+                                    FORMA DE PAGAMENTO
+                                </span>
+                                <span>
+                                    Valor Pago
+                                </span>
+                            </p>
+                            <p class="s1" style="padding-left: 2pt;text-indent:
+                                0pt;line-height: 9pt;text-align: left;">
+                                <span style="padding-right: 130px;">
+                                    Dinheiro
+                                </span>
+                                <span class="valorNF0">
+                                    28,50
+                                </span>
+                            </p>
+                            <p style="text-indent: 0pt;text-align:
+                                left;"><br /></p>
+                            <p style="padding-left:
+                                66pt;padding-right: 65pt;text-indent:
+                                0pt;text-align: center;"><a
+                                    href="http://www.fazenda.rj.gov.br/nfce/consulta"
+                                    style=" color: #212121; font-family:Arial,
+                                    sans-serif; font-style: normal; font-weight:
+                                    normal; text-decoration: none; font-size:
+                                    8pt;" target="_blank">Consulte pela Chave de
+                                    Acesso em </a>
+                                    <a
+                                    style=" color: black;"
+                                    href="http://www.fazenda.rj.gov.br/nfce/consulta"
+                                    class="s4"
+                                    target="_blank">www.fazenda.rj.gov.br/nfce/consulta</a></p>
+                            <p class="s5" style="padding-left:
+                                3pt;padding-right: 2pt;text-indent:
+                                0pt;line-height: 7pt;text-align: center;">3322
+                                013382284300 0122 6500 1000 0281629057951868</p>
+                            <p class="s5" style="padding-left:
+                                3pt;padding-right: 2pt;text-indent:
+                                0pt;line-height: 7pt;text-align: center;">CONSUMIDOR
+                                NÃO IDENTIFICADO</p>
+                            <p class="s5" style="padding-left:
+                                33pt;padding-right:
+                                32pt;text-indent: 0pt;text-align: center;">NFC-e
+                                n° 0000028162 Série 001 
+                                <span class="data0">
+                                    29/08/2022
+                                </span>
+                                <span class="hora0">
+                                    12:13:46
+                                </span>
+                                Via
+                                Empresa Protocolo de Autorizacão:
+                                333211369550136</p>
+                            <p class="s5" style="padding-left:
+                                3pt;padding-right:
+                                2pt;text-indent: 0pt;text-align: center;">EMITIDA
+                                EM CONTINGÊNCIA</p>
+                            <p class="s5" style="padding-left: 96pt;text-indent:
+                                0pt;line-height: 7pt;text-align: justify;">Pendente
+                                de Autorização</p>
+                            <p class="s7" style="padding-left:
+                                53pt;padding-right:
+                                52pt;text-indent: 0pt;text-align: justify;"><a
+                                    href="http://www.pdvitaguai.com.br/"
+                                    style="
+                                    color: #212121; font-family:Arial,
+                                    sans-serif; font-style: normal; font-weight:
+                                    normal; text-decoration: none; font-size:
+                                    6pt;" target="_blank">CPF/CNPJ Tribaprox R
+                                    3,64 Federal 5,40 Estadual Fonte </a><span
+                                    style="
+                                    color: #1154CC; font-family:Arial,
+                                    sans-serif; font-style: normal; font-weight:
+                                    normal; text-decoration: underline;
+                                    font-size: 6pt;">www.pdvitaguai.com.br</span>
+                                <span style=" color: #212121;">software para
+                                    emissao de NFC-e} Tributos Totais
+                                    Incidentes(Lei Federal 12.741/12):R$8,46</span>
+                            </p>
+                        </td>
+
+
+                        <td class="td-margin" id="nf1" style="width:260pt">
+                            <p style="text-indent: 0pt;text-align:
+                                left;"><br />
+                            </p>
+                            <p class="s1" style="padding-left:
+                                3pt;padding-right:
+                                2pt;text-indent: 0pt;text-align: center;">
+                                CNPJ:33.822.843/0001-22DUELOS RESTAURANTE EIRELE
+                                EST.
+                                DEPUTADO OCTAVIO CABRAL,284 LOJA B JARDIM
+                                AMERICA
+                                –ITAGUAI – RJ 23.810-302 Fone:(21)3782-2075
+                                I.E.11452.23-0
+                            </p>
+                            <p style="text-indent: 0pt;text-align: left;">
+                                <br />
+                            </p>
+                            <p class="s2" style="padding-left:
+                                3pt;padding-right:
+                                2pt;text-indent: 0pt;text-align: center;">
+                                DOCUMENTO AUXILIAR DA NOTA FISCAL DE CONSUMIDOR
+                                ELETRONICA
+                            </p>
+                            <p class="s3" style="padding-left:
+                                3pt;padding-right:
+                                2pt;text-indent: 0pt;line-height:
+                                10pt;text-align:
+                                center;">EMITIDA EM CONTINGÊNCIA</p>
+                            <p class="s3" style="padding-left: 76pt;text-indent:
+                                0pt;line-height: 10pt;text-align: left;">Pendente
+                                de
+                                Autorização</p>
+                            <p class="s1" style="padding-left:
+                                2pt;padding-right: 19pt;text-indent:
+                                0pt;text-align:
+                                left;">
+                                <span style="padding-right: 10px;">
+                                    # Código
+                                </span>
+                                <span style="padding-right: 30px;">
+                                    Descrição
+                                </span>
+                                <span style="padding-right: 7px;">
+                                    Qtd
+                                </span>
+                                <span style="padding-right: 20px;">
+                                    Un
+                                </span>
+                                <span style="padding-right: 13px;">
+                                    Valor Unit.
+                                </span>
+                                <span>
+                                    Valor Total
+                                </span>
+                            </p>
+                            <p class="s1" style="padding-left:
+                                2pt;padding-right: 19pt;text-indent:
+                                0pt;text-align:
+                                left;">
+                                <span style="padding-right: 19px;">
+                                    001 99
+                                </span>
+                                <span style="padding-right: 5px;">
+                                    Refeição divers 
+                                </span>
+                                 <span style="padding-right: 5px;">
+                                    001
+                                 </span> 
+                                 <span style="padding-right: 5px;">
+                                    UN
+                                 </span>
+                                 <span style="padding-right: 5px;">
+                                    X
+                                 </span>
+                                 <span class="valorNF1" style="padding-right: 45px;">
+                                    28,50
+                                 </span> 
+                                 <span class="valorNF1">
+                                    28,50
+                                 </span> 
+                                <span style="padding-right: 165px;">
+                                    QTD.TOTAL DE ITENS
+                                </span> 
+                                <span>
+                                    001
+                                </span>
+                            </p>
+                            <p class="s1" style="padding-left: 2pt;text-indent:
+                                0pt;text-align: left;">VALOR TOTAL R$
+                                <span class="valorNF1">
+                                     28,50
+                                </span> 
+                            </p>
+                            <p class="s1" style="padding-left: 2pt;text-indent:
+                                0pt;line-height: 9pt;text-align: left;">
+                                <span style="padding-right: 44px;">
+                                    FORMA DE PAGAMENTO
+                                </span>
+                                <span>
+                                    Valor Pago
+                                </span>
+                            </p>
+                            <p class="s1" style="padding-left: 2pt;text-indent:
+                                0pt;line-height: 9pt;text-align: left;">
+                                <span style="padding-right: 130px;">
+                                    Dinheiro
+                                </span>
+                                <span class="valorNF1">
+                                    28,50
+                                </span>
+                            </p>
+                            <p style="text-indent: 0pt;text-align:
+                                left;"><br /></p>
+                            <p style="padding-left:
+                                66pt;padding-right: 65pt;text-indent:
+                                0pt;text-align: center;"><a
+                                    href="http://www.fazenda.rj.gov.br/nfce/consulta"
+                                    style=" color: #212121; font-family:Arial,
+                                    sans-serif; font-style: normal; font-weight:
+                                    normal; text-decoration: none; font-size:
+                                    8pt;" target="_blank">Consulte pela Chave de
+                                    Acesso em </a><a
+                                    href="http://www.fazenda.rj.gov.br/nfce/consulta"
+                                    class="s4"
+                                    target="_blank">www.fazenda.rj.gov.br/nfce/consulta</a></p>
+                            <p class="s5" style="padding-left:
+                                3pt;padding-right: 2pt;text-indent:
+                                0pt;line-height: 7pt;text-align: center;">3322
+                                013382284300 0122 6500 1000 0281629057951868</p>
+                            <p class="s5" style="padding-left:
+                                3pt;padding-right: 2pt;text-indent:
+                                0pt;line-height: 7pt;text-align: center;">CONSUMIDOR
+                                NÃO IDENTIFICADO</p>
+                            <p class="s5" style="padding-left:
+                                33pt;padding-right:
+                                32pt;text-indent: 0pt;text-align: center;">NFC-e
+                                n° 0000028162 Série 001 
+                                <span class="data1">
+                                    29/08/2022
+                                </span>
+                                <span class="hora1">
+                                    12:13:46
+                                </span>
+                                Via
+                                Empresa Protocolo de Autorizacão:
+                                333211369550136</p>
+                            <p class="s5" style="padding-left:
+                                3pt;padding-right:
+                                2pt;text-indent: 0pt;text-align: center;">EMITIDA
+                                EM CONTINGÊNCIA</p>
+                            <p class="s5" style="padding-left: 96pt;text-indent:
+                                0pt;line-height: 7pt;text-align: justify;">Pendente
+                                de Autorização</p>
+                            <p class="s7" style="padding-left:
+                                53pt;padding-right:
+                                52pt;text-indent: 0pt;text-align: justify;"><a
+                                    href="http://www.pdvitaguai.com.br/"
+                                    style="
+                                    color: #212121; font-family:Arial,
+                                    sans-serif; font-style: normal; font-weight:
+                                    normal; text-decoration: none; font-size:
+                                    6pt;" target="_blank">CPF/CNPJ Tribaprox R
+                                    3,64 Federal 5,40 Estadual Fonte </a><span
+                                    style="
+                                    color: #1154CC; font-family:Arial,
+                                    sans-serif; font-style: normal; font-weight:
+                                    normal; text-decoration: underline;
+                                    font-size: 6pt;">www.pdvitaguai.com.br</span>
+                                <span style=" color: #212121;">software para
+                                    emissao de NFC-e} Tributos Totais
+                                    Incidentes(Lei Federal 12.741/12):R$8,46</span>
+                            </p>
+                        </td>
+                    </tr>
+
+                    <tr style="height:242pt">
+                        <td class="td-margin" id="nf2" style="width:260pt">
+                            <p style="text-indent: 0pt;text-align:
+                                left;"><br /> <br />
+                            </p>
+                            <p class="s1" style="padding-left:
+                                3pt;padding-right:
+                                2pt;text-indent: 0pt;text-align: center;">
+                                CNPJ:33.822.843/0001-22DUELOS RESTAURANTE EIRELE
+                                EST.
+                                DEPUTADO OCTAVIO CABRAL,284 LOJA B JARDIM
+                                AMERICA
+                                –ITAGUAI – RJ 23.810-302 Fone:(21)3782-2075
+                                I.E.11452.23-0
+                            </p>
+                            <p style="text-indent: 0pt;text-align: left;">
+                                <br />
+                            </p>
+                            <p class="s2" style="padding-left:
+                                3pt;padding-right:
+                                2pt;text-indent: 0pt;text-align: center;">
+                                DOCUMENTO AUXILIAR DA NOTA FISCAL DE CONSUMIDOR
+                                ELETRONICA
+                            </p>
+                            <p class="s3" style="padding-left:
+                                3pt;padding-right:
+                                2pt;text-indent: 0pt;line-height:
+                                10pt;text-align:
+                                center;">EMITIDA EM CONTINGÊNCIA</p>
+                            <p class="s3" style="padding-left: 76pt;text-indent:
+                                0pt;line-height: 10pt;text-align: left;">Pendente
+                                de
+                                Autorização</p>
+                            <p class="s1" style="padding-left:
+                                2pt;padding-right: 19pt;text-indent:
+                                0pt;text-align:
+                                left;">
+                                <span style="padding-right: 10px;">
+                                    # Código
+                                </span>
+                                <span style="padding-right: 30px;">
+                                    Descrição
+                                </span>
+                                <span style="padding-right: 7px;">
+                                    Qtd
+                                </span>
+                                <span style="padding-right: 20px;">
+                                    Un
+                                </span>
+                                <span style="padding-right: 13px;">
+                                    Valor Unit.
+                                </span>
+                                <span>
+                                    Valor Total
+                                </span>
+                            </p>
+                            <p class="s1" style="padding-left:
+                                2pt;padding-right: 19pt;text-indent:
+                                0pt;text-align:
+                                left;">
+                                <span style="padding-right: 19px;">
+                                    001 99
+                                </span>
+                                <span style="padding-right: 5px;">
+                                    Refeição divers 
+                                </span>
+                                 <span style="padding-right: 5px;">
+                                    001
+                                 </span> 
+                                 <span style="padding-right: 5px;">
+                                    UN
+                                 </span>
+                                 <span style="padding-right: 5px;">
+                                    X
+                                 </span>
+                                 <span class="valorNF2" style="padding-right: 45px;">
+                                    28,50
+                                 </span> 
+                                 <span class="valorNF2">
+                                    28,50
+                                 </span> 
+                                <span style="padding-right: 165px;">
+                                    QTD.TOTAL DE ITENS
+                                </span> 
+                                <span>
+                                    001
+                                </span>
+                            </p>
+                            <p class="s1" style="padding-left: 2pt;text-indent:
+                                0pt;text-align: left;">VALOR TOTAL R$
+                                <span class="valorNF2">
+                                     28,50
+                                </span> 
+                            </p>
+                            <p class="s1" style="padding-left: 2pt;text-indent:
+                                0pt;line-height: 9pt;text-align: left;">
+                                <span style="padding-right: 44px;">
+                                    FORMA DE PAGAMENTO
+                                </span>
+                                <span>
+                                    Valor Pago
+                                </span>
+                            </p>
+                            <p class="s1" style="padding-left: 2pt;text-indent:
+                                0pt;line-height: 9pt;text-align: left;">
+                                <span style="padding-right: 130px;">
+                                    Dinheiro
+                                </span>
+                                <span class="valorNF2">
+                                    28,50
+                                </span>
+                            </p>
+                            <p style="text-indent: 0pt;text-align:
+                                left;"><br /></p>
+                            <p style="padding-left:
+                                66pt;padding-right: 65pt;text-indent:
+                                0pt;text-align: center;"><a
+                                    href="http://www.fazenda.rj.gov.br/nfce/consulta"
+                                    style=" color: #212121; font-family:Arial,
+                                    sans-serif; font-style: normal; font-weight:
+                                    normal; text-decoration: none; font-size:
+                                    8pt;" target="_blank">Consulte pela Chave de
+                                    Acesso em </a><a
+                                    href="http://www.fazenda.rj.gov.br/nfce/consulta"
+                                    class="s4"
+                                    target="_blank">www.fazenda.rj.gov.br/nfce/consulta</a></p>
+                            <p class="s5" style="padding-left:
+                                3pt;padding-right: 2pt;text-indent:
+                                0pt;line-height: 7pt;text-align: center;">3322
+                                013382284300 0122 6500 1000 0281629057951868</p>
+                            <p class="s5" style="padding-left:
+                                3pt;padding-right: 2pt;text-indent:
+                                0pt;line-height: 7pt;text-align: center;">CONSUMIDOR
+                                NÃO IDENTIFICADO</p>
+                            <p class="s5" style="padding-left:
+                                33pt;padding-right:
+                                32pt;text-indent: 0pt;text-align: center;">NFC-e
+                                n° 0000028162 Série 001 
+                                <span class="data2">
+                                    29/08/2022
+                                </span>
+                                <span class="hora2">
+                                    12:13:46
+                                </span>
+                                Via
+                                Empresa Protocolo de Autorizacão:
+                                333211369550136</p>
+                            <p class="s5" style="padding-left:
+                                3pt;padding-right:
+                                2pt;text-indent: 0pt;text-align: center;">EMITIDA
+                                EM CONTINGÊNCIA</p>
+                            <p class="s5" style="padding-left: 96pt;text-indent:
+                                0pt;line-height: 7pt;text-align: justify;">Pendente
+                                de Autorização</p>
+                            <p class="s7" style="padding-left:
+                                53pt;padding-right:
+                                52pt;text-indent: 0pt;text-align: justify;"><a
+                                    href="http://www.pdvitaguai.com.br/"
+                                    style="
+                                    color: #212121; font-family:Arial,
+                                    sans-serif; font-style: normal; font-weight:
+                                    normal; text-decoration: none; font-size:
+                                    6pt;" target="_blank">CPF/CNPJ Tribaprox R
+                                    3,64 Federal 5,40 Estadual Fonte </a><span
+                                    style="
+                                    color: #1154CC; font-family:Arial,
+                                    sans-serif; font-style: normal; font-weight:
+                                    normal; text-decoration: underline;
+                                    font-size: 6pt;">www.pdvitaguai.com.br</span>
+                                <span style=" color: #212121;">software para
+                                    emissao de NFC-e} Tributos Totais
+                                    Incidentes(Lei Federal 12.741/12):R$8,46</span>
+                            </p>
+                        </td>
+
+
+                        <td class="td-margin" id="nf3" style="width:260pt">
+                            <p style="text-indent: 0pt;text-align:
+                                left;"><br /> <br />
+                            </p>
+                            <p class="s1" style="padding-left:
+                                3pt;padding-right:
+                                2pt;text-indent: 0pt;text-align: center;">
+                                CNPJ:33.822.843/0001-22DUELOS RESTAURANTE EIRELE
+                                EST.
+                                DEPUTADO OCTAVIO CABRAL,284 LOJA B JARDIM
+                                AMERICA
+                                –ITAGUAI – RJ 23.810-302 Fone:(21)3782-2075
+                                I.E.11452.23-0
+                            </p>
+                            <p style="text-indent: 0pt;text-align: left;">
+                                <br />
+                            </p>
+                            <p class="s2" style="padding-left:
+                                3pt;padding-right:
+                                2pt;text-indent: 0pt;text-align: center;">
+                                DOCUMENTO AUXILIAR DA NOTA FISCAL DE CONSUMIDOR
+                                ELETRONICA
+                            </p>
+                            <p class="s3" style="padding-left:
+                                3pt;padding-right:
+                                2pt;text-indent: 0pt;line-height:
+                                10pt;text-align:
+                                center;">EMITIDA EM CONTINGÊNCIA</p>
+                            <p class="s3" style="padding-left: 76pt;text-indent:
+                                0pt;line-height: 10pt;text-align: left;">Pendente
+                                de
+                                Autorização</p>
+                            <p class="s1" style="padding-left:
+                                2pt;padding-right: 19pt;text-indent:
+                                0pt;text-align:
+                                left;">
+                                <span style="padding-right: 10px;">
+                                    # Código
+                                </span>
+                                <span style="padding-right: 30px;">
+                                    Descrição
+                                </span>
+                                <span style="padding-right: 7px;">
+                                    Qtd
+                                </span>
+                                <span style="padding-right: 20px;">
+                                    Un
+                                </span>
+                                <span style="padding-right: 13px;">
+                                    Valor Unit.
+                                </span>
+                                <span>
+                                    Valor Total
+                                </span>
+                            </p>
+                            <p class="s1" style="padding-left:
+                                2pt;padding-right: 19pt;text-indent:
+                                0pt;text-align:
+                                left;">
+                                <span style="padding-right: 19px;">
+                                    001 99
+                                </span>
+                                <span style="padding-right: 5px;">
+                                    Refeição divers 
+                                </span>
+                                 <span style="padding-right: 5px;">
+                                    001
+                                 </span> 
+                                 <span style="padding-right: 5px;">
+                                    UN
+                                 </span>
+                                 <span style="padding-right: 5px;">
+                                    X
+                                 </span>
+                                 <span class="valorNF3" style="padding-right: 45px;">
+                                    28,50
+                                 </span> 
+                                 <span class="valorNF3">
+                                    28,50
+                                 </span> 
+                                <span style="padding-right: 165px;">
+                                    QTD.TOTAL DE ITENS
+                                </span> 
+                                <span>
+                                    001
+                                </span>
+                            </p>
+                            <p class="s1" style="padding-left: 2pt;text-indent:
+                                0pt;text-align: left;">VALOR TOTAL R$
+                                <span class="valorNF3">
+                                     28,50
+                                </span> 
+                            </p>
+                            <p class="s1" style="padding-left: 2pt;text-indent:
+                                0pt;line-height: 9pt;text-align: left;">
+                                <span style="padding-right: 44px;">
+                                    FORMA DE PAGAMENTO
+                                </span>
+                                <span>
+                                    Valor Pago
+                                </span>
+                            </p>
+                            <p class="s1" style="padding-left: 2pt;text-indent:
+                                0pt;line-height: 9pt;text-align: left;">
+                                <span style="padding-right: 130px;">
+                                    Dinheiro
+                                </span>
+                                <span class="valorNF3">
+                                    28,50
+                                </span>
+                            </p>
+                            <p style="text-indent: 0pt;text-align:
+                                left;"><br /></p>
+                            <p style="padding-left:
+                                66pt;padding-right: 65pt;text-indent:
+                                0pt;text-align: center;"><a
+                                    href="http://www.fazenda.rj.gov.br/nfce/consulta"
+                                    style=" color: #212121; font-family:Arial,
+                                    sans-serif; font-style: normal; font-weight:
+                                    normal; text-decoration: none; font-size:
+                                    8pt;" target="_blank">Consulte pela Chave de
+                                    Acesso em </a><a
+                                    href="http://www.fazenda.rj.gov.br/nfce/consulta"
+                                    class="s4"
+                                    target="_blank">www.fazenda.rj.gov.br/nfce/consulta</a></p>
+                            <p class="s5" style="padding-left:
+                                3pt;padding-right: 2pt;text-indent:
+                                0pt;line-height: 7pt;text-align: center;">3322
+                                013382284300 0122 6500 1000 0281629057951868</p>
+                            <p class="s5" style="padding-left:
+                                3pt;padding-right: 2pt;text-indent:
+                                0pt;line-height: 7pt;text-align: center;">CONSUMIDOR
+                                NÃO IDENTIFICADO</p>
+                            <p class="s5" style="padding-left:
+                                33pt;padding-right:
+                                32pt;text-indent: 0pt;text-align: center;">NFC-e
+                                n° 0000028162 Série 001 
+                                <span class="data3">
+                                    29/08/2022
+                                </span>
+                                <span class="hora3">
+                                    12:13:46
+                                </span>
+                                Via
+                                Empresa Protocolo de Autorizacão:
+                                333211369550136</p>
+                            <p class="s5" style="padding-left:
+                                3pt;padding-right:
+                                2pt;text-indent: 0pt;text-align: center;">EMITIDA
+                                EM CONTINGÊNCIA</p>
+                            <p class="s5" style="padding-left: 96pt;text-indent:
+                                0pt;line-height: 7pt;text-align: justify;">Pendente
+                                de Autorização</p>
+                            <p class="s7" style="padding-left:
+                                53pt;padding-right:
+                                52pt;text-indent: 0pt;text-align: justify;"><a
+                                    href="http://www.pdvitaguai.com.br/"
+                                    style="
+                                    color: #212121; font-family:Arial,
+                                    sans-serif; font-style: normal; font-weight:
+                                    normal; text-decoration: none; font-size:
+                                    6pt;" target="_blank">CPF/CNPJ Tribaprox R
+                                    3,64 Federal 5,40 Estadual Fonte </a><span
+                                    style="
+                                    color: #1154CC; font-family:Arial,
+                                    sans-serif; font-style: normal; font-weight:
+                                    normal; text-decoration: underline;
+                                    font-size: 6pt;">www.pdvitaguai.com.br</span>
+                                <span style=" color: #212121;">software para
+                                    emissao de NFC-e} Tributos Totais
+                                    Incidentes(Lei Federal 12.741/12):R$8,46</span>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr style="height:242pt">
+                        <td class="td-margin" id="nf4" style="width:260pt">
+                            <p style="text-indent: 0pt;text-align:
+                                left;"><br /> <br />
+                            </p>
+                            <p class="s1" style="padding-left:
+                                3pt;padding-right:
+                                2pt;text-indent: 0pt;text-align: center;">
+                                CNPJ:33.822.843/0001-22DUELOS RESTAURANTE EIRELE
+                                EST.
+                                DEPUTADO OCTAVIO CABRAL,284 LOJA B JARDIM
+                                AMERICA
+                                –ITAGUAI – RJ 23.810-302 Fone:(21)3782-2075
+                                I.E.11452.23-0
+                            </p>
+                            <p style="text-indent: 0pt;text-align: left;">
+                                <br />
+                            </p>
+                            <p class="s2" style="padding-left:
+                                3pt;padding-right:
+                                2pt;text-indent: 0pt;text-align: center;">
+                                DOCUMENTO AUXILIAR DA NOTA FISCAL DE CONSUMIDOR
+                                ELETRONICA
+                            </p>
+                            <p class="s3" style="padding-left:
+                                3pt;padding-right:
+                                2pt;text-indent: 0pt;line-height:
+                                10pt;text-align:
+                                center;">EMITIDA EM CONTINGÊNCIA</p>
+                            <p class="s3" style="padding-left: 76pt;text-indent:
+                                0pt;line-height: 10pt;text-align: left;">Pendente
+                                de
+                                Autorização</p>
+                            <p class="s1" style="padding-left:
+                                2pt;padding-right: 19pt;text-indent:
+                                0pt;text-align:
+                                left;">
+                                <span style="padding-right: 10px;">
+                                    # Código
+                                </span>
+                                <span style="padding-right: 30px;">
+                                    Descrição
+                                </span>
+                                <span style="padding-right: 7px;">
+                                    Qtd
+                                </span>
+                                <span style="padding-right: 20px;">
+                                    Un
+                                </span>
+                                <span style="padding-right: 13px;">
+                                    Valor Unit.
+                                </span>
+                                <span>
+                                    Valor Total
+                                </span>
+                            </p>
+                            <p class="s1" style="padding-left:
+                                2pt;padding-right: 19pt;text-indent:
+                                0pt;text-align:
+                                left;">
+                                <span style="padding-right: 19px;">
+                                    001 99
+                                </span>
+                                <span style="padding-right: 5px;">
+                                    Refeição divers 
+                                </span>
+                                 <span style="padding-right: 5px;">
+                                    001
+                                 </span> 
+                                 <span style="padding-right: 5px;">
+                                    UN
+                                 </span>
+                                 <span style="padding-right: 5px;">
+                                    X
+                                 </span>
+                                 <span class="valorNF4" style="padding-right: 45px;">
+                                    28,50
+                                 </span> 
+                                 <span class="valorNF4">
+                                    28,50
+                                 </span> 
+                                <span style="padding-right: 165px;">
+                                    QTD.TOTAL DE ITENS
+                                </span> 
+                                <span>
+                                    001
+                                </span>
+                            </p>
+                            <p class="s1" style="padding-left: 2pt;text-indent:
+                                0pt;text-align: left;">VALOR TOTAL R$
+                                <span class="valorNF4">
+                                     28,50
+                                </span> 
+                            </p>
+                            <p class="s1" style="padding-left: 2pt;text-indent:
+                                0pt;line-height: 9pt;text-align: left;">
+                                <span style="padding-right: 44px;">
+                                    FORMA DE PAGAMENTO
+                                </span>
+                                <span>
+                                    Valor Pago
+                                </span>
+                            </p>
+                            <p class="s1" style="padding-left: 2pt;text-indent:
+                                0pt;line-height: 9pt;text-align: left;">
+                                <span style="padding-right: 130px;">
+                                    Dinheiro
+                                </span>
+                                <span class="valorNF4">
+                                    28,50
+                                </span>
+                            </p>
+                            <p style="text-indent: 0pt;text-align:
+                                left;"><br /></p>
+                            <p style="padding-left:
+                                66pt;padding-right: 65pt;text-indent:
+                                0pt;text-align: center;"><a
+                                    href="http://www.fazenda.rj.gov.br/nfce/consulta"
+                                    style=" color: #212121; font-family:Arial,
+                                    sans-serif; font-style: normal; font-weight:
+                                    normal; text-decoration: none; font-size:
+                                    8pt;" target="_blank">Consulte pela Chave de
+                                    Acesso em </a><a
+                                    href="http://www.fazenda.rj.gov.br/nfce/consulta"
+                                    class="s4"
+                                    target="_blank">www.fazenda.rj.gov.br/nfce/consulta</a></p>
+                            <p class="s5" style="padding-left:
+                                3pt;padding-right: 2pt;text-indent:
+                                0pt;line-height: 7pt;text-align: center;">3322
+                                013382284300 0122 6500 1000 0281629057951868</p>
+                            <p class="s5" style="padding-left:
+                                3pt;padding-right: 2pt;text-indent:
+                                0pt;line-height: 7pt;text-align: center;">CONSUMIDOR
+                                NÃO IDENTIFICADO</p>
+                            <p class="s5" style="padding-left:
+                                33pt;padding-right:
+                                32pt;text-indent: 0pt;text-align: center;">NFC-e
+                                n° 0000028162 Série 001 
+                                <span class="data4">
+                                    29/08/2022
+                                </span>
+                                <span class="hora4">
+                                    12:13:46
+                                </span>
+                                Via
+                                Empresa Protocolo de Autorizacão:
+                                333211369550136</p>
+                            <p class="s5" style="padding-left:
+                                3pt;padding-right:
+                                2pt;text-indent: 0pt;text-align: center;">EMITIDA
+                                EM CONTINGÊNCIA</p>
+                            <p class="s5" style="padding-left: 96pt;text-indent:
+                                0pt;line-height: 7pt;text-align: justify;">Pendente
+                                de Autorização</p>
+                            <p class="s7" style="padding-left:
+                                53pt;padding-right:
+                                52pt;text-indent: 0pt;text-align: justify;"><a
+                                    href="http://www.pdvitaguai.com.br/"
+                                    style="
+                                    color: #212121; font-family:Arial,
+                                    sans-serif; font-style: normal; font-weight:
+                                    normal; text-decoration: none; font-size:
+                                    6pt;" target="_blank">CPF/CNPJ Tribaprox R
+                                    3,64 Federal 5,40 Estadual Fonte </a><span
+                                    style="
+                                    color: #1154CC; font-family:Arial,
+                                    sans-serif; font-style: normal; font-weight:
+                                    normal; text-decoration: underline;
+                                    font-size: 6pt;">www.pdvitaguai.com.br</span>
+                                <span style=" color: #212121;">software para
+                                    emissao de NFC-e} Tributos Totais
+                                    Incidentes(Lei Federal 12.741/12):R$8,46</span>
+                            </p>
+                        </td>
+
+
+                        <td class="td-margin" id="nf5" style="width:260pt">
+                            <p style="text-indent: 0pt;text-align:
+                                left;"><br /> <br />
+                            </p>
+                            <p class="s1" style="padding-left:
+                                3pt;padding-right:
+                                2pt;text-indent: 0pt;text-align: center;">
+                                CNPJ:33.822.843/0001-22DUELOS RESTAURANTE EIRELE
+                                EST.
+                                DEPUTADO OCTAVIO CABRAL,284 LOJA B JARDIM
+                                AMERICA
+                                –ITAGUAI – RJ 23.810-302 Fone:(21)3782-2075
+                                I.E.11452.23-0
+                            </p>
+                            <p style="text-indent: 0pt;text-align: left;">
+                                <br />
+                            </p>
+                            <p class="s2" style="padding-left:
+                                3pt;padding-right:
+                                2pt;text-indent: 0pt;text-align: center;">
+                                DOCUMENTO AUXILIAR DA NOTA FISCAL DE CONSUMIDOR
+                                ELETRONICA
+                            </p>
+                            <p class="s3" style="padding-left:
+                                3pt;padding-right:
+                                2pt;text-indent: 0pt;line-height:
+                                10pt;text-align:
+                                center;">EMITIDA EM CONTINGÊNCIA</p>
+                            <p class="s3" style="padding-left: 76pt;text-indent:
+                                0pt;line-height: 10pt;text-align: left;">Pendente
+                                de
+                                Autorização</p>
+                            <p class="s1" style="padding-left:
+                                2pt;padding-right: 19pt;text-indent:
+                                0pt;text-align:
+                                left;">
+                                <span style="padding-right: 10px;">
+                                    # Código
+                                </span>
+                                <span style="padding-right: 30px;">
+                                    Descrição
+                                </span>
+                                <span style="padding-right: 7px;">
+                                    Qtd
+                                </span>
+                                <span style="padding-right: 20px;">
+                                    Un
+                                </span>
+                                <span style="padding-right: 13px;">
+                                    Valor Unit.
+                                </span>
+                                <span>
+                                    Valor Total
+                                </span>
+                            </p>
+                            <p class="s1" style="padding-left:
+                                2pt;padding-right: 19pt;text-indent:
+                                0pt;text-align:
+                                left;">
+                                <span style="padding-right: 19px;">
+                                    001 99
+                                </span>
+                                <span style="padding-right: 5px;">
+                                    Refeição divers 
+                                </span>
+                                 <span style="padding-right: 5px;">
+                                    001
+                                 </span> 
+                                 <span style="padding-right: 5px;">
+                                    UN
+                                 </span>
+                                 <span style="padding-right: 5px;">
+                                    X
+                                 </span>
+                                 <span class="valorNF5" style="padding-right: 45px;">
+                                    28,50
+                                 </span> 
+                                 <span class="valorNF5">
+                                    28,50
+                                 </span> 
+                                <span style="padding-right: 165px;">
+                                    QTD.TOTAL DE ITENS
+                                </span> 
+                                <span>
+                                    001
+                                </span>
+                            </p>
+                            <p class="s1" style="padding-left: 2pt;text-indent:
+                                0pt;text-align: left;">VALOR TOTAL R$
+                                <span class="valorNF5">
+                                     28,50
+                                </span> 
+                            </p>
+                            <p class="s1" style="padding-left: 2pt;text-indent:
+                                0pt;line-height: 9pt;text-align: left;">
+                                <span style="padding-right: 44px;">
+                                    FORMA DE PAGAMENTO
+                                </span>
+                                <span>
+                                    Valor Pago
+                                </span>
+                            </p>
+                            <p class="s1" style="padding-left: 2pt;text-indent:
+                                0pt;line-height: 9pt;text-align: left;">
+                                <span style="padding-right: 130px;">
+                                    Dinheiro
+                                </span>
+                                <span class="valorNF5">
+                                    28,50
+                                </span>
+                            </p>
+                            <p style="text-indent: 0pt;text-align:
+                                left;"><br /></p>
+                            <p style="padding-left:
+                                66pt;padding-right: 65pt;text-indent:
+                                0pt;text-align: center;"><a
+                                    href="http://www.fazenda.rj.gov.br/nfce/consulta"
+                                    style=" color: #212121; font-family:Arial,
+                                    sans-serif; font-style: normal; font-weight:
+                                    normal; text-decoration: none; font-size:
+                                    8pt;" target="_blank">Consulte pela Chave de
+                                    Acesso em </a><a
+                                    href="http://www.fazenda.rj.gov.br/nfce/consulta"
+                                    class="s4"
+                                    target="_blank">www.fazenda.rj.gov.br/nfce/consulta</a></p>
+                            <p class="s5" style="padding-left:
+                                3pt;padding-right: 2pt;text-indent:
+                                0pt;line-height: 7pt;text-align: center;">3322
+                                013382284300 0122 6500 1000 0281629057951868</p>
+                            <p class="s5" style="padding-left:
+                                3pt;padding-right: 2pt;text-indent:
+                                0pt;line-height: 7pt;text-align: center;">CONSUMIDOR
+                                NÃO IDENTIFICADO</p>
+                            <p class="s5" style="padding-left:
+                                33pt;padding-right:
+                                32pt;text-indent: 0pt;text-align: center;">NFC-e
+                                n° 0000028162 Série 001 
+                                <span class="data5">
+                                    29/08/2022
+                                </span>
+                                <span class="hora5">
+                                    12:13:46
+                                </span>
+                                Via
+                                Empresa Protocolo de Autorizacão:
+                                333211369550136</p>
+                            <p class="s5" style="padding-left:
+                                3pt;padding-right:
+                                2pt;text-indent: 0pt;text-align: center;">EMITIDA
+                                EM CONTINGÊNCIA</p>
+                            <p class="s5" style="padding-left: 96pt;text-indent:
+                                0pt;line-height: 7pt;text-align: justify;">Pendente
+                                de Autorização</p>
+                            <p class="s7" style="padding-left:
+                                53pt;padding-right:
+                                52pt;text-indent: 0pt;text-align: justify;"><a
+                                    href="http://www.pdvitaguai.com.br/"
+                                    style="
+                                    color: #212121; font-family:Arial,
+                                    sans-serif; font-style: normal; font-weight:
+                                    normal; text-decoration: none; font-size:
+                                    6pt;" target="_blank">CPF/CNPJ Tribaprox R
+                                    3,64 Federal 5,40 Estadual Fonte </a><span
+                                    style="
+                                    color: #1154CC; font-family:Arial,
+                                    sans-serif; font-style: normal; font-weight:
+                                    normal; text-decoration: underline;
+                                    font-size: 6pt;">www.pdvitaguai.com.br</span>
+                                <span style=" color: #212121;">software para
+                                    emissao de NFC-e} Tributos Totais
+                                    Incidentes(Lei Federal 12.741/12):R$8,46</span>
+                            </p>
+                        </td>
+                    </tr>
+
+                    <tr style="height:242pt">
+                        <td class="td-margin" id="nf6" style="width:260pt">
+                            <p style="text-indent: 0pt;text-align:
+                                left;"><br /> <br />
+                            </p>
+                            <p class="s1" style="padding-left:
+                                3pt;padding-right:
+                                2pt;text-indent: 0pt;text-align: center;">
+                                CNPJ:33.822.843/0001-22DUELOS RESTAURANTE EIRELE
+                                EST.
+                                DEPUTADO OCTAVIO CABRAL,284 LOJA B JARDIM
+                                AMERICA
+                                –ITAGUAI – RJ 23.810-302 Fone:(21)3782-2075
+                                I.E.11452.23-0
+                            </p>
+                            <p style="text-indent: 0pt;text-align: left;">
+                                <br />
+                            </p>
+                            <p class="s2" style="padding-left:
+                                3pt;padding-right:
+                                2pt;text-indent: 0pt;text-align: center;">
+                                DOCUMENTO AUXILIAR DA NOTA FISCAL DE CONSUMIDOR
+                                ELETRONICA
+                            </p>
+                            <p class="s3" style="padding-left:
+                                3pt;padding-right:
+                                2pt;text-indent: 0pt;line-height:
+                                10pt;text-align:
+                                center;">EMITIDA EM CONTINGÊNCIA</p>
+                            <p class="s3" style="padding-left: 76pt;text-indent:
+                                0pt;line-height: 10pt;text-align: left;">Pendente
+                                de
+                                Autorização</p>
+                            <p class="s1" style="padding-left:
+                                2pt;padding-right: 19pt;text-indent:
+                                0pt;text-align:
+                                left;">
+                                <span style="padding-right: 10px;">
+                                    # Código
+                                </span>
+                                <span style="padding-right: 30px;">
+                                    Descrição
+                                </span>
+                                <span style="padding-right: 7px;">
+                                    Qtd
+                                </span>
+                                <span style="padding-right: 20px;">
+                                    Un
+                                </span>
+                                <span style="padding-right: 13px;">
+                                    Valor Unit.
+                                </span>
+                                <span>
+                                    Valor Total
+                                </span>
+                            </p>
+                            <p class="s1" style="padding-left:
+                                2pt;padding-right: 19pt;text-indent:
+                                0pt;text-align:
+                                left;">
+                                <span style="padding-right: 19px;">
+                                    001 99
+                                </span>
+                                <span style="padding-right: 5px;">
+                                    Refeição divers 
+                                </span>
+                                 <span style="padding-right: 5px;">
+                                    001
+                                 </span> 
+                                 <span style="padding-right: 5px;">
+                                    UN
+                                 </span>
+                                 <span style="padding-right: 5px;">
+                                    X
+                                 </span>
+                                 <span class="valorNF6" style="padding-right: 45px;">
+                                    28,50
+                                 </span> 
+                                 <span class="valorNF6">
+                                    28,50
+                                 </span> 
+                                <span style="padding-right: 165px;">
+                                    QTD.TOTAL DE ITENS
+                                </span> 
+                                <span>
+                                    001
+                                </span>
+                            </p>
+                            <p class="s1" style="padding-left: 2pt;text-indent:
+                                0pt;text-align: left;">VALOR TOTAL R$
+                                <span class="valorNF6">
+                                     28,50
+                                </span> 
+                            </p>
+                            <p class="s1" style="padding-left: 2pt;text-indent:
+                                0pt;line-height: 9pt;text-align: left;">
+                                <span style="padding-right: 44px;">
+                                    FORMA DE PAGAMENTO
+                                </span>
+                                <span>
+                                    Valor Pago
+                                </span>
+                            </p>
+                            <p class="s1" style="padding-left: 2pt;text-indent:
+                                0pt;line-height: 9pt;text-align: left;">
+                                <span style="padding-right: 130px;">
+                                    Dinheiro
+                                </span>
+                                <span class="valorNF6">
+                                    28,50
+                                </span>
+                            </p>
+                            <p style="text-indent: 0pt;text-align:
+                                left;"><br /></p>
+                            <p style="padding-left:
+                                66pt;padding-right: 65pt;text-indent:
+                                0pt;text-align: center;"><a
+                                    href="http://www.fazenda.rj.gov.br/nfce/consulta"
+                                    style=" color: #212121; font-family:Arial,
+                                    sans-serif; font-style: normal; font-weight:
+                                    normal; text-decoration: none; font-size:
+                                    8pt;" target="_blank">Consulte pela Chave de
+                                    Acesso em </a><a
+                                    href="http://www.fazenda.rj.gov.br/nfce/consulta"
+                                    class="s4"
+                                    target="_blank">www.fazenda.rj.gov.br/nfce/consulta</a></p>
+                            <p class="s5" style="padding-left:
+                                3pt;padding-right: 2pt;text-indent:
+                                0pt;line-height: 7pt;text-align: center;">3322
+                                013382284300 0122 6500 1000 0281629057951868</p>
+                            <p class="s5" style="padding-left:
+                                3pt;padding-right: 2pt;text-indent:
+                                0pt;line-height: 7pt;text-align: center;">CONSUMIDOR
+                                NÃO IDENTIFICADO</p>
+                            <p class="s5" style="padding-left:
+                                33pt;padding-right:
+                                32pt;text-indent: 0pt;text-align: center;">NFC-e
+                                n° 0000028162 Série 001 
+                                <span class="data6">
+                                    29/08/2022
+                                </span>
+                                <span class="hora6">
+                                    12:13:46
+                                </span>
+                                Via
+                                Empresa Protocolo de Autorizacão:
+                                333211369550136</p>
+                            <p class="s5" style="padding-left:
+                                3pt;padding-right:
+                                2pt;text-indent: 0pt;text-align: center;">EMITIDA
+                                EM CONTINGÊNCIA</p>
+                            <p class="s5" style="padding-left: 96pt;text-indent:
+                                0pt;line-height: 7pt;text-align: justify;">Pendente
+                                de Autorização</p>
+                            <p class="s7" style="padding-left:
+                                53pt;padding-right:
+                                52pt;text-indent: 0pt;text-align: justify;"><a
+                                    href="http://www.pdvitaguai.com.br/"
+                                    style="
+                                    color: #212121; font-family:Arial,
+                                    sans-serif; font-style: normal; font-weight:
+                                    normal; text-decoration: none; font-size:
+                                    6pt;" target="_blank">CPF/CNPJ Tribaprox R
+                                    3,64 Federal 5,40 Estadual Fonte </a><span
+                                    style="
+                                    color: #1154CC; font-family:Arial,
+                                    sans-serif; font-style: normal; font-weight:
+                                    normal; text-decoration: underline;
+                                    font-size: 6pt;">www.pdvitaguai.com.br</span>
+                                <span style=" color: #212121;">software para
+                                    emissao de NFC-e} Tributos Totais
+                                    Incidentes(Lei Federal 12.741/12):R$8,46</span>
+                            </p>
+                        </td>
+
+
+                        <td class="td-margin" id="nf7" style="width:260pt">
+                            <p style="text-indent: 0pt;text-align:
+                                left;"><br /> <br />
+                            </p>
+                            <p class="s1" style="padding-left:
+                                3pt;padding-right:
+                                2pt;text-indent: 0pt;text-align: center;">
+                                CNPJ:33.822.843/0001-22DUELOS RESTAURANTE EIRELE
+                                EST.
+                                DEPUTADO OCTAVIO CABRAL,284 LOJA B JARDIM
+                                AMERICA
+                                –ITAGUAI – RJ 23.810-302 Fone:(21)3782-2075
+                                I.E.11452.23-0
+                            </p>
+                            <p style="text-indent: 0pt;text-align: left;">
+                                <br />
+                            </p>
+                            <p class="s2" style="padding-left:
+                                3pt;padding-right:
+                                2pt;text-indent: 0pt;text-align: center;">
+                                DOCUMENTO AUXILIAR DA NOTA FISCAL DE CONSUMIDOR
+                                ELETRONICA
+                            </p>
+                            <p class="s3" style="padding-left:
+                                3pt;padding-right:
+                                2pt;text-indent: 0pt;line-height:
+                                10pt;text-align:
+                                center;">EMITIDA EM CONTINGÊNCIA</p>
+                            <p class="s3" style="padding-left: 76pt;text-indent:
+                                0pt;line-height: 10pt;text-align: left;">Pendente
+                                de
+                                Autorização</p>
+                            <p class="s1" style="padding-left:
+                                2pt;padding-right: 19pt;text-indent:
+                                0pt;text-align:
+                                left;">
+                                <span style="padding-right: 10px;">
+                                    # Código
+                                </span>
+                                <span style="padding-right: 30px;">
+                                    Descrição
+                                </span>
+                                <span style="padding-right: 7px;">
+                                    Qtd
+                                </span>
+                                <span style="padding-right: 20px;">
+                                    Un
+                                </span>
+                                <span style="padding-right: 13px;">
+                                    Valor Unit.
+                                </span>
+                                <span>
+                                    Valor Total
+                                </span>
+                            </p>
+                            <p class="s1" style="padding-left:
+                                2pt;padding-right: 19pt;text-indent:
+                                0pt;text-align:
+                                left;">
+                                <span style="padding-right: 19px;">
+                                    001 99
+                                </span>
+                                <span style="padding-right: 5px;">
+                                    Refeição divers 
+                                </span>
+                                 <span style="padding-right: 5px;">
+                                    001
+                                 </span> 
+                                 <span style="padding-right: 5px;">
+                                    UN
+                                 </span>
+                                 <span style="padding-right: 5px;">
+                                    X
+                                 </span>
+                                 <span class="valorNF7" style="padding-right: 45px;">
+                                    28,50
+                                 </span> 
+                                 <span class="valorNF7">
+                                    28,50
+                                 </span> 
+                                <span style="padding-right: 165px;">
+                                    QTD.TOTAL DE ITENS
+                                </span> 
+                                <span>
+                                    001
+                                </span>
+                            </p>
+                            <p class="s1" style="padding-left: 2pt;text-indent:
+                                0pt;text-align: left;">VALOR TOTAL R$
+                                <span class="valorNF7">
+                                     28,50
+                                </span> 
+                            </p>
+                            <p class="s1" style="padding-left: 2pt;text-indent:
+                                0pt;line-height: 9pt;text-align: left;">
+                                <span style="padding-right: 44px;">
+                                    FORMA DE PAGAMENTO
+                                </span>
+                                <span>
+                                    Valor Pago
+                                </span>
+                            </p>
+                            <p class="s1" style="padding-left: 2pt;text-indent:
+                                0pt;line-height: 9pt;text-align: left;">
+                                <span style="padding-right: 130px;">
+                                    Dinheiro
+                                </span>
+                                <span class="valorNF7">
+                                    28,50
+                                </span>
+                            </p>
+                            <p style="text-indent: 0pt;text-align:
+                                left;"><br /></p>
+                            <p style="padding-left:
+                                66pt;padding-right: 65pt;text-indent:
+                                0pt;text-align: center;"><a
+                                    href="http://www.fazenda.rj.gov.br/nfce/consulta"
+                                    style=" color: #212121; font-family:Arial,
+                                    sans-serif; font-style: normal; font-weight:
+                                    normal; text-decoration: none; font-size:
+                                    8pt;" target="_blank">Consulte pela Chave de
+                                    Acesso em </a><a
+                                    href="http://www.fazenda.rj.gov.br/nfce/consulta"
+                                    class="s4"
+                                    target="_blank">www.fazenda.rj.gov.br/nfce/consulta</a></p>
+                            <p class="s5" style="padding-left:
+                                3pt;padding-right: 2pt;text-indent:
+                                0pt;line-height: 7pt;text-align: center;">3322
+                                013382284300 0122 6500 1000 0281629057951868</p>
+                            <p class="s5" style="padding-left:
+                                3pt;padding-right: 2pt;text-indent:
+                                0pt;line-height: 7pt;text-align: center;">CONSUMIDOR
+                                NÃO IDENTIFICADO</p>
+                            <p class="s5" style="padding-left:
+                                33pt;padding-right:
+                                32pt;text-indent: 0pt;text-align: center;">NFC-e
+                                n° 0000028162 Série 001 
+                                <span class="data7">
+                                    29/08/2022
+                                </span>
+                                <span class="hora7">
+                                    12:13:46
+                                </span>
+                                Via
+                                Empresa Protocolo de Autorizacão:
+                                333211369550136</p>
+                            <p class="s5" style="padding-left:
+                                3pt;padding-right:
+                                2pt;text-indent: 0pt;text-align: center;">EMITIDA
+                                EM CONTINGÊNCIA</p>
+                            <p class="s5" style="padding-left: 96pt;text-indent:
+                                0pt;line-height: 7pt;text-align: justify;">Pendente
+                                de Autorização</p>
+                            <p class="s7" style="padding-left:
+                                53pt;padding-right:
+                                52pt;text-indent: 0pt;text-align: justify;"><a
+                                    href="http://www.pdvitaguai.com.br/"
+                                    style="
+                                    color: #212121; font-family:Arial,
+                                    sans-serif; font-style: normal; font-weight:
+                                    normal; text-decoration: none; font-size:
+                                    6pt;" target="_blank">CPF/CNPJ Tribaprox R
+                                    3,64 Federal 5,40 Estadual Fonte </a><span
+                                    style="
+                                    color: #1154CC; font-family:Arial,
+                                    sans-serif; font-style: normal; font-weight:
+                                    normal; text-decoration: underline;
+                                    font-size: 6pt;">www.pdvitaguai.com.br</span>
+                                <span style=" color: #212121;">software para
+                                    emissao de NFC-e} Tributos Totais
+                                    Incidentes(Lei Federal 12.741/12):R$8,46</span>
+                            </p>
+                        </td>
+                    </tr>
+
+                    <tr style="height:242pt">
+                        <td class="td-margin" id="nf8" style="width:260pt">
+                            <p style="text-indent: 0pt;text-align:
+                                left;"><br /> <br />
+                            </p>
+                            <p class="s1" style="padding-left:
+                                3pt;padding-right:
+                                2pt;text-indent: 0pt;text-align: center;">
+                                CNPJ:33.822.843/0001-22DUELOS RESTAURANTE EIRELE
+                                EST.
+                                DEPUTADO OCTAVIO CABRAL,284 LOJA B JARDIM
+                                AMERICA
+                                –ITAGUAI – RJ 23.810-302 Fone:(21)3782-2075
+                                I.E.11452.23-0
+                            </p>
+                            <p style="text-indent: 0pt;text-align: left;">
+                                <br />
+                            </p>
+                            <p class="s2" style="padding-left:
+                                3pt;padding-right:
+                                2pt;text-indent: 0pt;text-align: center;">
+                                DOCUMENTO AUXILIAR DA NOTA FISCAL DE CONSUMIDOR
+                                ELETRONICA
+                            </p>
+                            <p class="s3" style="padding-left:
+                                3pt;padding-right:
+                                2pt;text-indent: 0pt;line-height:
+                                10pt;text-align:
+                                center;">EMITIDA EM CONTINGÊNCIA</p>
+                            <p class="s3" style="padding-left: 76pt;text-indent:
+                                0pt;line-height: 10pt;text-align: left;">Pendente
+                                de
+                                Autorização</p>
+                            <p class="s1" style="padding-left:
+                                2pt;padding-right: 19pt;text-indent:
+                                0pt;text-align:
+                                left;">
+                                <span style="padding-right: 10px;">
+                                    # Código
+                                </span>
+                                <span style="padding-right: 30px;">
+                                    Descrição
+                                </span>
+                                <span style="padding-right: 7px;">
+                                    Qtd
+                                </span>
+                                <span style="padding-right: 20px;">
+                                    Un
+                                </span>
+                                <span style="padding-right: 13px;">
+                                    Valor Unit.
+                                </span>
+                                <span>
+                                    Valor Total
+                                </span>
+                            </p>
+                            <p class="s1" style="padding-left:
+                                2pt;padding-right: 19pt;text-indent:
+                                0pt;text-align:
+                                left;">
+                                <span style="padding-right: 19px;">
+                                    001 99
+                                </span>
+                                <span style="padding-right: 5px;">
+                                    Refeição divers 
+                                </span>
+                                 <span style="padding-right: 5px;">
+                                    001
+                                 </span> 
+                                 <span style="padding-right: 5px;">
+                                    UN
+                                 </span>
+                                 <span style="padding-right: 5px;">
+                                    X
+                                 </span>
+                                 <span class="valorNF8" style="padding-right: 45px;">
+                                    28,50
+                                 </span> 
+                                 <span class="valorNF8">
+                                    28,50
+                                 </span> 
+                                <span style="padding-right: 165px;">
+                                    QTD.TOTAL DE ITENS
+                                </span> 
+                                <span>
+                                    001
+                                </span>
+                            </p>
+                            <p class="s1" style="padding-left: 2pt;text-indent:
+                                0pt;text-align: left;">VALOR TOTAL R$
+                                <span class="valorNF8">
+                                     28,50
+                                </span> 
+                            </p>
+                            <p class="s1" style="padding-left: 2pt;text-indent:
+                                0pt;line-height: 9pt;text-align: left;">
+                                <span style="padding-right: 44px;">
+                                    FORMA DE PAGAMENTO
+                                </span>
+                                <span>
+                                    Valor Pago
+                                </span>
+                            </p>
+                            <p class="s1" style="padding-left: 2pt;text-indent:
+                                0pt;line-height: 9pt;text-align: left;">
+                                <span style="padding-right: 130px;">
+                                    Dinheiro
+                                </span>
+                                <span class="valorNF8">
+                                    28,50
+                                </span>
+                            </p>
+                            <p style="text-indent: 0pt;text-align:
+                                left;"><br /></p>
+                            <p style="padding-left:
+                                66pt;padding-right: 65pt;text-indent:
+                                0pt;text-align: center;"><a
+                                    href="http://www.fazenda.rj.gov.br/nfce/consulta"
+                                    style=" color: #212121; font-family:Arial,
+                                    sans-serif; font-style: normal; font-weight:
+                                    normal; text-decoration: none; font-size:
+                                    8pt;" target="_blank">Consulte pela Chave de
+                                    Acesso em </a><a
+                                    href="http://www.fazenda.rj.gov.br/nfce/consulta"
+                                    class="s4"
+                                    target="_blank">www.fazenda.rj.gov.br/nfce/consulta</a></p>
+                            <p class="s5" style="padding-left:
+                                3pt;padding-right: 2pt;text-indent:
+                                0pt;line-height: 7pt;text-align: center;">3322
+                                013382284300 0122 6500 1000 0281629057951868</p>
+                            <p class="s5" style="padding-left:
+                                3pt;padding-right: 2pt;text-indent:
+                                0pt;line-height: 7pt;text-align: center;">CONSUMIDOR
+                                NÃO IDENTIFICADO</p>
+                            <p class="s5" style="padding-left:
+                                33pt;padding-right:
+                                32pt;text-indent: 0pt;text-align: center;">NFC-e
+                                n° 0000028162 Série 001 
+                                <span class="data8">
+                                    29/08/2022
+                                </span>
+                                <span class="hora8">
+                                    12:13:46
+                                </span>
+                                Via
+                                Empresa Protocolo de Autorizacão:
+                                333211369550136</p>
+                            <p class="s5" style="padding-left:
+                                3pt;padding-right:
+                                2pt;text-indent: 0pt;text-align: center;">EMITIDA
+                                EM CONTINGÊNCIA</p>
+                            <p class="s5" style="padding-left: 96pt;text-indent:
+                                0pt;line-height: 7pt;text-align: justify;">Pendente
+                                de Autorização</p>
+                            <p class="s7" style="padding-left:
+                                53pt;padding-right:
+                                52pt;text-indent: 0pt;text-align: justify;"><a
+                                    href="http://www.pdvitaguai.com.br/"
+                                    style="
+                                    color: #212121; font-family:Arial,
+                                    sans-serif; font-style: normal; font-weight:
+                                    normal; text-decoration: none; font-size:
+                                    6pt;" target="_blank">CPF/CNPJ Tribaprox R
+                                    3,64 Federal 5,40 Estadual Fonte </a><span
+                                    style="
+                                    color: #1154CC; font-family:Arial,
+                                    sans-serif; font-style: normal; font-weight:
+                                    normal; text-decoration: underline;
+                                    font-size: 6pt;">www.pdvitaguai.com.br</span>
+                                <span style=" color: #212121;">software para
+                                    emissao de NFC-e} Tributos Totais
+                                    Incidentes(Lei Federal 12.741/12):R$8,46</span>
+                            </p>
+                        </td>
+
+
+                        <td class="td-margin" id="nf9" style="width:260pt">
+                            <p style="text-indent: 0pt;text-align:
+                                left;"><br /> <br />
+                            </p>
+                            <p class="s1" style="padding-left:
+                                3pt;padding-right:
+                                2pt;text-indent: 0pt;text-align: center;">
+                                CNPJ:33.822.843/0001-22DUELOS RESTAURANTE EIRELE
+                                EST.
+                                DEPUTADO OCTAVIO CABRAL,284 LOJA B JARDIM
+                                AMERICA
+                                –ITAGUAI – RJ 23.810-302 Fone:(21)3782-2075
+                                I.E.11452.23-0
+                            </p>
+                            <p style="text-indent: 0pt;text-align: left;">
+                                <br />
+                            </p>
+                            <p class="s2" style="padding-left:
+                                3pt;padding-right:
+                                2pt;text-indent: 0pt;text-align: center;">
+                                DOCUMENTO AUXILIAR DA NOTA FISCAL DE CONSUMIDOR
+                                ELETRONICA
+                            </p>
+                            <p class="s3" style="padding-left:
+                                3pt;padding-right:
+                                2pt;text-indent: 0pt;line-height:
+                                10pt;text-align:
+                                center;">EMITIDA EM CONTINGÊNCIA</p>
+                            <p class="s3" style="padding-left: 76pt;text-indent:
+                                0pt;line-height: 10pt;text-align: left;">Pendente
+                                de
+                                Autorização</p>
+                            <p class="s1" style="padding-left:
+                                2pt;padding-right: 19pt;text-indent:
+                                0pt;text-align:
+                                left;">
+                                <span style="padding-right: 10px;">
+                                    # Código
+                                </span>
+                                <span style="padding-right: 30px;">
+                                    Descrição
+                                </span>
+                                <span style="padding-right: 7px;">
+                                    Qtd
+                                </span>
+                                <span style="padding-right: 20px;">
+                                    Un
+                                </span>
+                                <span style="padding-right: 13px;">
+                                    Valor Unit.
+                                </span>
+                                <span>
+                                    Valor Total
+                                </span>
+                            </p>
+                            <p class="s1" style="padding-left:
+                                2pt;padding-right: 19pt;text-indent:
+                                0pt;text-align:
+                                left;">
+                                <span style="padding-right: 19px;">
+                                    001 99
+                                </span>
+                                <span style="padding-right: 5px;">
+                                    Refeição divers 
+                                </span>
+                                 <span style="padding-right: 5px;">
+                                    001
+                                 </span> 
+                                 <span style="padding-right: 5px;">
+                                    UN
+                                 </span>
+                                 <span style="padding-right: 5px;">
+                                    X
+                                 </span>
+                                 <span class="valorNF9" style="padding-right: 45px;">
+                                    28,50
+                                 </span> 
+                                 <span class="valorNF9">
+                                    28,50
+                                 </span> 
+                                <span style="padding-right: 165px;">
+                                    QTD.TOTAL DE ITENS
+                                </span> 
+                                <span>
+                                    001
+                                </span>
+                            </p>
+                            <p class="s1" style="padding-left: 2pt;text-indent:
+                                0pt;text-align: left;">VALOR TOTAL R$
+                                <span class="valorNF9">
+                                     28,50
+                                </span> 
+                            </p>
+                            <p class="s1" style="padding-left: 2pt;text-indent:
+                                0pt;line-height: 9pt;text-align: left;">
+                                <span style="padding-right: 44px;">
+                                    FORMA DE PAGAMENTO
+                                </span>
+                                <span>
+                                    Valor Pago
+                                </span>
+                            </p>
+                            <p class="s1" style="padding-left: 2pt;text-indent:
+                                0pt;line-height: 9pt;text-align: left;">
+                                <span style="padding-right: 130px;">
+                                    Dinheiro
+                                </span>
+                                <span class="valorNF9">
+                                    28,50
+                                </span>
+                            </p>
+                            <p style="text-indent: 0pt;text-align:
+                                left;"><br /></p>
+                            <p style="padding-left:
+                                66pt;padding-right: 65pt;text-indent:
+                                0pt;text-align: center;"><a
+                                    href="http://www.fazenda.rj.gov.br/nfce/consulta"
+                                    style=" color: #212121; font-family:Arial,
+                                    sans-serif; font-style: normal; font-weight:
+                                    normal; text-decoration: none; font-size:
+                                    8pt;" target="_blank">Consulte pela Chave de
+                                    Acesso em </a><a
+                                    href="http://www.fazenda.rj.gov.br/nfce/consulta"
+                                    class="s4"
+                                    target="_blank">www.fazenda.rj.gov.br/nfce/consulta</a></p>
+                            <p class="s5" style="padding-left:
+                                3pt;padding-right: 2pt;text-indent:
+                                0pt;line-height: 7pt;text-align: center;">3322
+                                013382284300 0122 6500 1000 0281629057951868</p>
+                            <p class="s5" style="padding-left:
+                                3pt;padding-right: 2pt;text-indent:
+                                0pt;line-height: 7pt;text-align: center;">CONSUMIDOR
+                                NÃO IDENTIFICADO</p>
+                            <p class="s5" style="padding-left:
+                                33pt;padding-right:
+                                32pt;text-indent: 0pt;text-align: center;">NFC-e
+                                n° 0000028162 Série 001 
+                                <span class="data9">
+                                    29/08/2022
+                                </span>
+                                <span class="hora9">
+                                    12:13:46
+                                </span>
+                                Via
+                                Empresa Protocolo de Autorizacão:
+                                333211369550136</p>
+                            <p class="s5" style="padding-left:
+                                3pt;padding-right:
+                                2pt;text-indent: 0pt;text-align: center;">EMITIDA
+                                EM CONTINGÊNCIA</p>
+                            <p class="s5" style="padding-left: 96pt;text-indent:
+                                0pt;line-height: 7pt;text-align: justify;">Pendente
+                                de Autorização</p>
+                            <p class="s7" style="padding-left:
+                                53pt;padding-right:
+                                52pt;text-indent: 0pt;text-align: justify;"><a
+                                    href="http://www.pdvitaguai.com.br/"
+                                    style="
+                                    color: #212121; font-family:Arial,
+                                    sans-serif; font-style: normal; font-weight:
+                                    normal; text-decoration: none; font-size:
+                                    6pt;" target="_blank">CPF/CNPJ Tribaprox R
+                                    3,64 Federal 5,40 Estadual Fonte </a><span
+                                    style="
+                                    color: #1154CC; font-family:Arial,
+                                    sans-serif; font-style: normal; font-weight:
+                                    normal; text-decoration: underline;
+                                    font-size: 6pt;">www.pdvitaguai.com.br</span>
+                                <span style=" color: #212121;">software para
+                                    emissao de NFC-e} Tributos Totais
+                                    Incidentes(Lei Federal 12.741/12):R$8,46</span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+                <br /> <br />
+            </div>
+    </body>
+
+</html>
