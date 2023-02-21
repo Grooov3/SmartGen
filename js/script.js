@@ -1,7 +1,7 @@
 window.jsPDF = window.jspdf.jsPDF;
 window.html2canvas = html2canvas;
 
-var priceArr = ["30,00", "27,70", "28,50", "32,50", "29,75", "35,00"];
+var priceArr = ["30,85", "37,20", "38,50", "42,00", "32,75", "35,00"];
 var dateArr = [];
 var allNFs = [
   "nf0",
