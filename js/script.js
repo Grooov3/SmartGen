@@ -137,7 +137,6 @@ function gerarArquivo() {
       ).outerHTML = `<div class="block"></div>`)
     );
   });
-  document.querySelector("#datePicker").value = "";
   setTimeout(() => {
     document.querySelector(
       ".loader-container"
