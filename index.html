@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>SmartGen v2</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://npmcdn.com/flatpickr/dist/themes/material_orange.css"
+    />
+  </head>
+  <div class="block"></div>
+
+  <body onload="onLoad()" class="dark-grey">
+    <!-- Navigation Bar -->
+    <div class="w3-bar w3-black w3-large">
+      <a href="#" class="logo w3-mobile"
+        ><i class="fa fa-sticky-note w3-large" style="margin-right: 6px"></i
+        >SmartGen</a
+      >
+      <a />
+      <a id="changelogBtn" class="w3-bar-item w3-button w3-mobile">Changelog</a>
+      <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h4>
+            <i class="fa fa-info w3-deep-orange w3-padding"></i>
+            Changelog:
+          </h4>
+          <div style="padding-left: 70px">
+            <ul>
+              <li>Sistema totalmente recriado.</li>
+              <li>
+                É possível selecionar mulitiplos dias intercalados, basta clicar
+                em todos os dias desejados, um de cada vez.
+              </li>
+              <li>
+                É possivel editar, adicionar ou remover os valores. Basta manter
+                os valores desejados separados por / (barra).
+                <br />Ex: 40,50/35,00/20,00 <br />
+                PS: Já existem valores pre-definidos, quaisquer alterações são
+                inteiramente opcionais.
+              </li>
+              <li>
+                Os PDF's virão recortados do tamanho correto e com efeitos
+                aplicados.
+              </li>
+              <li>Pré-visualização não implementada</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="w3-content" style="max-width: 1532px">
+      <div class="w3-container w3-margin-top" id="rooms">
+        <h3>Geração de PDF</h3>
+        <p style="font-size: 14px">
+          Preencha os campos abaixo para geração dos documentos desejados.
+        </p>
+        <p style="font-size: 9pt">Campos com <b>*</b> são obrigatórios</p>
+      </div>
+
+      <div class="w3-row-padding">
+        <div class="w3-col m3">
+          <!-- to-do ativar wrap com botão de fechar -->
+          <label><i class="fa fa-calendar-o"></i> Datas* </label>
+          <input
+            class="w3-input w3-border date-values"
+            type="datetime-local"
+            placeholder="Selecione as datas..."
+            id="datePicker"
+            required
+            readonly
+          />
+        </div>
+        <!-- TO-DO colocar chips nos valores -->
+        <div class="w3-col m2">
+          <label><i class="fa fa-usd"></i> Valores</label>
+          <input class="w3-input w3-border" type="text" id="valores" value="" />
+        </div>
+        <div class="w3-col m2">
+          <label><i class="fa fa-file-pdf-o"></i> Geração de PDF's</label>
+          <button onclick="gerarArquivo()" class="button-black">Gerar</button>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer class="w3-padding-25 w3-black w3-center w3-margin-top footer">
+      <div class="w3-xlarge w3-padding-18">
+        <h6 style="color: rgb(57, 58, 58); line-height: 17px">
+          Powered by <br />Groove
+        </h6>
+      </div>
+    </footer>
+    <script src="./js/script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/pdfmake@latest/build/pdfmake.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/pdfmake@latest/build/vfs_fonts.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://npmcdn.com/flatpickr/dist/flatpickr.min.js"></script>
+    <script src="https://npmcdn.com/flatpickr/dist/l10n/pt.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </body>
+</html>
