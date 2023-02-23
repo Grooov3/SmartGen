@@ -340,7 +340,7 @@ function pageGenerator() {
           width: randomWidth,
           height: randomHeigth,
           absolutePosition: { x: 0, y: 0 },
-          opacity: 0.5,
+          opacity: 0.4,
           pageBreak: breakPage,
         },
       ],
