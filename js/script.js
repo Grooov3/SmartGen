@@ -146,6 +146,7 @@ function gerarArquivo() {
 
 function pageGenerator() {
   let contadorDia = 0;
+  priceArr = []
   let values = document.querySelector("#valores").value;
   let newVal = values.split("/");
   priceArr.push(...newVal);
