@@ -54,11 +54,9 @@ var fp = flatpickr("input[type=datetime-local]", {
   dateFormat: "d/m/Y",
   locale: "pt",
 
-  onClose(selectedDates) {
+  onChange(selectedDates) {
     dateArr = selectedDates;
     dateArr.sort((a, b) => a - b);
-    console.log("dateArr: "+ dateArr);
-    console.log("SelectedDates: "+ selectedDates);
   },
 });
 
@@ -139,12 +137,12 @@ function gerarArquivo() {
       ).outerHTML = `<div class="block"></div>`)
     );
   });
-  dateArr = []
   setTimeout(() => {
     document.querySelector(
       ".loader-container"
     ).outerHTML = `<div class="block"></div>`;
   }, 500);
+  todosDias = [];
 }
 
 function pageGenerator() {
