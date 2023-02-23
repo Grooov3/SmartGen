@@ -89,7 +89,7 @@ function gerarArquivo() {
   document.querySelector(".block").outerHTML = loading;
   pageGenerator();
   var dd = {
-    pageSize: { width: 280, height: 270 },
+    pageSize: { width: 280, height: 260 },
     pageMargins: [20, 20, 10, 10],
     content: [
       todosDias.map((page) => {
