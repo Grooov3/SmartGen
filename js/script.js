@@ -57,8 +57,6 @@ var fp = flatpickr("input[type=datetime-local]", {
   onChange(selectedDates) {
     dateArr = selectedDates;
     dateArr.sort((a, b) => a - b);
-    console.log(dateArr[1]);
-    console.log(dateArr.length);
   },
 });
 
@@ -154,8 +152,8 @@ function pageGenerator() {
   priceArr.push(...newVal);
 
   dateArr.forEach(async (dia) => {
-    let randomWidth = randomSize(280, 1450);
-    let randomHeigth = randomSize(270, 1450);
+    let randomWidth = randomSize(280, 2000);
+    let randomHeigth = randomSize(270, 4450);
     let price = randomPrice();
     let time = randomTime().toLocaleTimeString("pt-BR");
     const breakPage = contadorDia === dateArr.length - 1 ? "none" : "after";
