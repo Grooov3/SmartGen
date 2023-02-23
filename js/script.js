@@ -8,7 +8,7 @@ var loading = `  <div class="loader-container">
                 </div>`;
 
 function onLoad() {
-  toDataURL("./../assets/teste2.png", function (dataUrl) {
+  toDataURL("assets/teste2.png", function (dataUrl) {
     imgOverlay = dataUrl;
   });
   document.querySelector("#valores").value = defaultPrices;
