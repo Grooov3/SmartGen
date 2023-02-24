@@ -6,9 +6,17 @@ var imgOverlay;
 var loading = `  <div class="loader-container">
                   <div class="spinner"></div>
                 </div>`;
+var randomEffect;
+var effects = [
+  { image: "teste", opacity: 0.7 },
+  { image: "teste2", opacity: 0.4 },
+  { image: "teste3", opacity: 0.5 },
+  { image: "teste4", opacity: 0.5 },
+];
 
 function onLoad() {
-  toDataURL("assets/teste2.png", function (dataUrl) {
+  randomEffect = effects[randomizer(0, 3)];
+  toDataURL(`assets/${randomEffect.image}.png`, function (dataUrl) {
     imgOverlay = dataUrl;
   });
   document.querySelector("#valores").value = defaultPrices;
@@ -341,7 +349,7 @@ function pageGenerator() {
           width: randomWidth,
           height: randomHeigth,
           absolutePosition: { x: 0, y: 0 },
-          opacity: 0.4,
+          opacity: randomEffect.opacity,
           pageBreak: breakPage,
         },
       ],
