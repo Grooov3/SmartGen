@@ -89,7 +89,7 @@ function randomTime() {
   return new Date(timestamp);
 }
 
-function randomSize(min, max) {
+function randomizer(min, max) {
   return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
@@ -161,8 +161,8 @@ function pageGenerator() {
   priceArr.push(...newVal);
 
   dateArr.forEach(async (dia) => {
-    let randomWidth = randomSize(280, 2000);
-    let randomHeigth = randomSize(270, 4450);
+    let randomWidth = randomizer(280, 2000);
+    let randomHeigth = randomizer(270, 4450);
     let price = randomPrice();
     let time = randomTime().toLocaleTimeString("pt-BR");
     const breakPage = contadorDia === dateArr.length - 1 ? "none" : "after";
