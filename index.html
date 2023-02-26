@@ -75,27 +75,50 @@
         <p style="font-size: 9pt">Campos com <b>*</b> são obrigatórios</p>
       </div>
 
-      <div class="w3-row-padding">
+       <div class="w3-row-padding" style="margin-top: 5px">
         <div class="w3-col m3">
           <!-- to-do ativar wrap com botão de fechar -->
-          <label><i class="fa fa-calendar-o"></i> Datas* </label>
-          <input
-            class="w3-input w3-border date-values"
-            type="datetime-local"
-            placeholder="Selecione as datas..."
-            id="datePicker"
-            required
-            readonly
-          />
+          <label><i class="fa fa-calendar-o"></i> Datas</label>
+          <div class="content">
+            <p class="subtitle">Clique para selecionar as datas</p>
+            <div class="wrapper">
+              <input
+                class="w3-input w3-border date-values"
+                type="datetime-local"
+                placeholder="Selecione as datas..."
+                id="datePicker"
+                required
+                readonly
+              />
+            </div>
+          </div>
         </div>
         <!-- TO-DO colocar chips nos valores -->
         <div class="w3-col m3">
           <label><i class="fa fa-usd"></i> Valores</label>
-          <input class="w3-input w3-border" type="text" id="valores" value="" />
+          <div class="content">
+            <p class="subtitle">
+              Aperte Enter ou adicione barra após cada valor
+            </p>
+            <div class="wrapper">
+              <input
+                type="text"
+                spellcheck="false"
+                class="w3-input w3-border input-target"
+              />
+
+              <ul class="ul-target"></ul>
+              <div class="details">
+                <p><span>0</span> valores inseridos</p>
+                <button>Remover Todos</button>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="w3-col m2">
-          <label><i class="fa fa-file-pdf-o"></i> Geração de PDF's</label>
-          <button onclick="gerarArquivo()" class="button-black">Gerar</button>
+          <button onclick="gerarArquivo()" class="button-black btn-gerar">
+            Gerar PDF <i class="fa fa-file-pdf-o"></i>
+          </button>
         </div>
       </div>
     </div>
