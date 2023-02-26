@@ -1,4 +1,3 @@
-var defaultPrices = "30,85/37,20/38,50/42,00/32,75/35,00";
 var priceArr = [];
 var dateArr = [];
 var todosDias = []; //variável para o conteudo iterado e concatenado
@@ -19,7 +18,6 @@ function onLoad() {
   toDataURL(`assets/${randomEffect.image}.png`, function (dataUrl) {
     imgOverlay = dataUrl;
   });
-  document.querySelector("#valores").value = defaultPrices;
 }
 
 function toDataURL(src, callback, outputFormat) {
@@ -93,6 +91,60 @@ function randomizer(min, max) {
   return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
+
+const ul = document.querySelector(".ul-target"),
+let input = document.querySelector(".input-target"),
+let tagNumb = document.querySelector(".details span");
+var valores = ["30,85", "37,20", "38,50", "42,00", "32,75", "35,00"];
+countValores();
+createValor();
+
+function countValores() {
+  tagNumb.innerText = valores.length;
+}
+
+function createValor() {
+  ul.querySelectorAll("li").forEach((li) => li.remove());
+  valores
+    .slice()
+    .reverse()
+    .forEach((valor) => {
+      let liValor = `<li>${valor} <i class="fa fa-times" onclick="remove(this, '${valor}')"><b></b></i></li>`;
+      ul.insertAdjacentHTML("afterbegin", liValor);
+    });
+  countValores();
+}
+
+function remove(element, valor) {
+  let index = valores.indexOf(valor);
+  valores = [...valores.slice(0, index), ...valores.slice(index + 1)];
+  element.parentElement.remove();
+  countValores();
+}
+
+function addValor(e) {
+  if (e.key == "Enter") {
+    let valor = e.target.value.replace(/\s+/g, " ");
+    valor = e.target.value.replace(/\./g, ",");
+    if (valor.length > 1 && !valores.includes(valor)) {
+      valor.split("/").forEach((valor) => {
+        valores.push(valor);
+        createValor();
+      });
+    }
+    e.target.value = "";
+  }
+}
+
+input.addEventListener("keyup", addValor);
+const removeBtn = document.querySelector(".details button");
+removeBtn.addEventListener("click", () => {
+  valores.length = 0;
+  ul.querySelectorAll("li").forEach((li) => li.remove());
+  countValores();
+});
+
+
 function gerarArquivo() {
   document.querySelector(".block").outerHTML = loading;
   pageGenerator();
@@ -155,10 +207,7 @@ function gerarArquivo() {
 
 function pageGenerator() {
   let contadorDia = 0;
-  priceArr = new Array();
-  let values = document.querySelector("#valores").value;
-  let newVal = values.split("/");
-  priceArr.push(...newVal);
+  priceArr = valores;
 
   dateArr.forEach(async (dia) => {
     let randomWidth = randomizer(280, 2000);
