@@ -93,8 +93,8 @@ function randomizer(min, max) {
 
 
 const ul = document.querySelector(".ul-target"),
-let input = document.querySelector(".input-target"),
-let tagNumb = document.querySelector(".details span");
+var input = document.querySelector(".input-target"),
+var tagNumb = document.querySelector(".details span");
 var valores = ["30,85", "37,20", "38,50", "42,00", "32,75", "35,00"];
 countValores();
 createValor();
