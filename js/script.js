@@ -99,17 +99,16 @@ function randomizer(min, max) {
 
 const ul = document.querySelector(".ul-target"),
   input = document.querySelector(".input-target"),
-  tagNumb = document.querySelector(".details span");
+  valoresNumb = document.querySelector(".details span");
 countValores();
 createValor();
 
 function countValores() {
-  tagNumb.innerText = valores.length;
+  valoresNumb.innerText = valores.length;
 }
 
 function createValor() {
   ul.querySelectorAll("li").forEach((li) => li.remove());
-  console.log("create" + valores);
 
   valores
     .slice()
@@ -151,7 +150,6 @@ removeBtn.addEventListener("click", () => {
 });
 
 function restaurarValores() {
-  console.log(valoresDefault);
   valores = [...valoresDefault];
   createValor();
   localStorage.removeItem("valoresSalvos");
