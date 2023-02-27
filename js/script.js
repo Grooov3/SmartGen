@@ -2,6 +2,11 @@ var priceArr = [];
 var dateArr = [];
 var todosDias = []; //variável para o conteudo iterado e concatenado
 var imgOverlay;
+const valoresDefault = ["30,85", "37,20", "38,50", "42,00", "32,75", "35,00"];
+var valores = JSON.parse(localStorage.getItem("valoresSalvos"))
+  ? JSON.parse(localStorage.getItem("valoresSalvos"))
+  : [...valoresDefault];
+
 var loading = `  <div class="loader-container">
                   <div class="spinner"></div>
                 </div>`;
@@ -43,6 +48,7 @@ function toDataURL(src, callback, outputFormat) {
 var modal = document.getElementById("myModal");
 var btn = document.getElementById("changelogBtn");
 var span = document.getElementsByClassName("close")[0];
+
 btn.onclick = function () {
   modal.style.display = "block";
 };
@@ -91,11 +97,9 @@ function randomizer(min, max) {
   return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
-
 const ul = document.querySelector(".ul-target"),
- input = document.querySelector(".input-target"),
- tagNumb = document.querySelector(".details span");
-var valores = ["30,85", "37,20", "38,50", "42,00", "32,75", "35,00"];
+  input = document.querySelector(".input-target"),
+  tagNumb = document.querySelector(".details span");
 countValores();
 createValor();
 
@@ -105,11 +109,13 @@ function countValores() {
 
 function createValor() {
   ul.querySelectorAll("li").forEach((li) => li.remove());
+  console.log("create" + valores);
+
   valores
     .slice()
     .reverse()
     .forEach((valor) => {
-      let liValor = `<li>${valor} <i class="fa fa-times" onclick="remove(this, '${valor}')"><b></b></i></li>`;
+      let liValor = `<li>${valor} <i class="fa fa-times" onclick="remove(this, '${valor}')"></i></li>`;
       ul.insertAdjacentHTML("afterbegin", liValor);
     });
   countValores();
@@ -137,13 +143,28 @@ function addValor(e) {
 }
 
 input.addEventListener("keyup", addValor);
-const removeBtn = document.querySelector(".details button");
+const removeBtn = document.querySelector(".remove-all");
 removeBtn.addEventListener("click", () => {
-  valores.length = 0;
+  valores = [];
   ul.querySelectorAll("li").forEach((li) => li.remove());
   countValores();
 });
 
+function restaurarValores() {
+  console.log(valoresDefault);
+  valores = [...valoresDefault];
+  createValor();
+  localStorage.removeItem("valoresSalvos");
+}
+
+function salvarValores() {
+  if (valores !== valoresDefault && valores.length > 0)
+    localStorage.setItem("valoresSalvos", JSON.stringify(valores));
+}
+
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip({ trigger: "hover" });
+});
 
 function gerarArquivo() {
   document.querySelector(".block").outerHTML = loading;

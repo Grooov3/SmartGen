@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" http-equiv="Permissions-Policy" content="interest-cohort=()">
+    <meta
+      charset="utf-8"
+      http-equiv="Permissions-Policy"
+      content="interest-cohort=()"
+    />
     <title>SmartGen v2</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
@@ -18,17 +22,22 @@
       type="text/css"
       href="https://npmcdn.com/flatpickr/dist/themes/material_orange.css"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
   </head>
   <div class="block"></div>
 
   <body onload="onLoad()" class="dark-grey">
     <!-- Navigation Bar -->
     <div class="w3-bar w3-black w3-large">
-      <a href="#" class="logo w3-mobile"
+      <span href="#" class="logo w3-mobile"
         ><i class="fa fa-sticky-note w3-large" style="margin-right: 6px"></i
-        >SmartGen</a
+        >SmartGen</span
       >
-      <a />
       <a id="changelogBtn" class="w3-bar-item w3-button w3-mobile">Changelog</a>
       <div id="myModal" class="modal">
         <!-- Modal content -->
@@ -46,8 +55,10 @@
                 em todos os dias desejados, um de cada vez.
               </li>
               <li>
-                É possivel inserir um novo valor digitando o numero desejado e em seguida apertar Enter para ser adicionado ou manter
-                os valores desejados separados por / (barra) e depois apertr Enter para adicioná-los.
+                É possivel inserir um novo valor digitando o numero desejado e
+                em seguida apertar Enter para ser adicionado ou manter os
+                valores desejados separados por / (barra) e depois apertr Enter
+                para adicioná-los.
                 <br />Ex: 40,50/35,00/20,00 <br />
                 PS: Já existem valores pre-definidos, quaisquer alterações são
                 inteiramente opcionais.
@@ -68,14 +79,14 @@
         <p style="font-size: 16px">
           Preencha os campos abaixo para geração dos documentos desejados.
         </p>
-                <p style="font-size: 16px">
+        <p style="font-size: 16px">
           Converta os PDF's para imagem
           <a href="https://www.sejda.com/pt/flatten-pdf">AQUI</a>.
         </p>
         <br />
       </div>
 
-       <div class="w3-row-padding" style="margin-top: 5px">
+      <div class="w3-row-padding" style="margin-top: 5px">
         <div class="w3-col m3">
           <!-- to-do ativar wrap com botão de fechar -->
           <label><i class="fa fa-calendar-o"></i> Datas</label>
@@ -110,7 +121,33 @@
               <ul class="ul-target"></ul>
               <div class="details">
                 <p><span>0</span> valores inseridos</p>
-                <button>Remover Todos</button>
+                <div>
+                  <button
+                    onClick="{restaurarValores()}"
+                    data-toggle="tooltip"
+                    data-placement="top"
+                    class="btn-clip"
+                    title="Restaurar padrão"
+                  >
+                    <i class="fa fa-refresh"></i>
+                  </button>
+                  <button
+                    onClick="{salvarValores()}"
+                    data-toggle="tooltip"
+                    data-placement="top"
+                    title="Salvar alterações"
+                  >
+                    <i class="fa fa-floppy-o"></i>
+                  </button>
+                  <button
+                    class="remove-all"
+                    data-toggle="tooltip"
+                    data-placement="top"
+                    title="Remover Todos"
+                  >
+                    <i class="fa fa-trash"></i>
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -144,6 +181,10 @@
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <script src="https://npmcdn.com/flatpickr/dist/flatpickr.min.js"></script>
     <script src="https://npmcdn.com/flatpickr/dist/l10n/pt.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

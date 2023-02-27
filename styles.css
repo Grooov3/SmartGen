@@ -271,3 +271,12 @@ body {
 .btn-gerar {
   margin-top: 54px;
 }
+.fa-refresh,
+.fa-floppy-o,
+.fa-file-pdf-o,
+.fa-trash {
+  color: white;
+}
+p {
+  margin-bottom: 2px !important;
+}
