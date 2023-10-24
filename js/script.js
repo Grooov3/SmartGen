@@ -244,13 +244,14 @@ function pageGenerator() {
   let contadorDia = 0;
   priceArr = valores;
 
-  let turno = document.getElementById("Turno");
-
+  let turno = document.getElementById("turno_dia").checked ? "dia" : "noite"
+  
   dateArr.forEach(async (dia) => {
     let randomWidth = randomizer(280, 2000);
     let randomHeigth = randomizer(270, 4450);
     let price = randomPrice();
-    let time = randomTime(turno.value).toLocaleTimeString("pt-BR");
+
+    let time = randomTime(turno).toLocaleTimeString("pt-BR");
     const breakPage = contadorDia === dateArr.length - 1 ? "none" : "after";
     todosDias = todosDias.concat([
       [
