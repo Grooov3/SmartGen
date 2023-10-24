@@ -75,18 +75,34 @@ var fp = flatpickr("input[type=datetime-local]", {
 function randomPrice() {
   return priceArr[Math.floor(Math.random() * priceArr.length)];
 }
-function randomTime() {
+function randomTime(turno) {
   const date = new Date();
-  let horaInicial = new Date(new Date(date.setDate(date.getDate()))).setHours(
+  let horaInicial;
+  let horaFinal;
+
+  if(turno == 'dia'){
+      horaInicial = new Date(new Date(date.setDate(date.getDate()))).setHours(
     11,
     50,
     00
   );
-  let horaFinal = new Date(new Date(date.setDate(date.getDate()))).setHours(
+  horaFinal = new Date(new Date(date.setDate(date.getDate()))).setHours(
     12,
     59,
     59
   );
+  } else {
+      horaInicial = new Date(new Date(date.setDate(date.getDate()))).setHours(
+      20,
+      40,
+      00
+    );
+    horaFinal = new Date(new Date(date.setDate(date.getDate()))).setHours(
+      22,
+      40,
+      59
+    );
+  }
   let timestamp = Math.floor(
     Math.random() * (horaFinal - horaInicial + 1) + horaInicial
   );
@@ -228,11 +244,13 @@ function pageGenerator() {
   let contadorDia = 0;
   priceArr = valores;
 
+  let turno = document.getElementById("Turno");
+
   dateArr.forEach(async (dia) => {
     let randomWidth = randomizer(280, 2000);
     let randomHeigth = randomizer(270, 4450);
     let price = randomPrice();
-    let time = randomTime().toLocaleTimeString("pt-BR");
+    let time = randomTime(turno.value).toLocaleTimeString("pt-BR");
     const breakPage = contadorDia === dateArr.length - 1 ? "none" : "after";
     todosDias = todosDias.concat([
       [
